@@ -19,10 +19,10 @@ def Replace(explicit='暴力', sentence='暴力执法'):
 Replace()
 
 
-def rewrite(name='filtered.txt'):
+def rewrite(content, name='filtered.txt'):
     filtered_file = open(name, 'w')
-    filtered_file.write(Replace())
+    filtered_file.write(content)
     filtered_file.close()
 
 
-rewrite()
+rewrite(content=Replace())

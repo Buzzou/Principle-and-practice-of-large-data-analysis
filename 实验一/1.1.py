@@ -7,9 +7,8 @@ def login(attempts=1, saved_psw=123456):
             break
         else:
             print('Wrong password or invalid input, Remaining attempts: ' + str(4 - attempts))
-            if attempts > 3:
-                print('Your account has been suspended')
-            continue
+    else:
+        print('Your account has been suspended')
 
 
 login()
